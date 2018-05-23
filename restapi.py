@@ -97,8 +97,6 @@ def scores_department(field,department):
                     response = make_response(output)
                     response.mimetype = 'text/csv'
                     return response
-                else:
-                    return not_found(404)
 
     except IOError:
         return not_found(404)
